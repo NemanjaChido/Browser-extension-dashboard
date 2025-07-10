@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/NemanjaChido/Browser-extension-dashboard.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://nemanjachido.github.io/Browser-extension-dashboard/)
 
 ### Built with
 

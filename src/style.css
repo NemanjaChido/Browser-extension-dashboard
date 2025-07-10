@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Noto Sans;
+    src: url("/assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+@layer utilities {
+    /* primary background color */
+    .dark-background {
+        background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+        color: white;
+    }
+    /* secondary background color */
+    .light-background  {
+        background-image: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+        color: #040918;
+    }
+
+    
+    #nav-container.white-background{
+        background-color: white;
+        color: #000;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+    .item.white-background,
+    .cloned-item.white-background {
+        background-color: white;
+        color: hsl(227, 75%, 14%);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+    .link-btn.white-background {
+        background-color: white;
+        color: hsl(227, 75%, 14%);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .Neutral-800 {
+        background-color: hsl(226, 25%, 17%);
+    }
+    .Neutral-700{
+        background-color: hsl(225, 23%, 24%);
+    }
+    .Neutral-600 {
+        background-color: hsl(226, 11%, 37%);
+    }
+    .neutral-600{
+        color: hsl(226, 11%, 37%);
+    }
+    .neutral-300{
+        color: hsl(0, 0%, 78%);
+    }
+    .Neutral-200{
+        background-color: hsl(217, 61%, 90%);
+    }
+    .neutral-100{
+        color: hsl(0, 0%, 93%);
+    }
+    .neutral-900{
+        color: hsl(227, 75%, 14%);
+    }
+
+
+    /* text sizes */
+    .text-size {
+        font-size: clamp(1.2rem, 1.3vw, 3rem);
+    }
+    .medium-text{
+        font-size: clamp(0.8rem, 1.3vw, 1.2rem);
+    }
+    .paragrph-font-size{
+        font-size: clamp(0.8rem, 1.3vw, 1rem);
+    }
+    
+    /* Style the select Btn */
+    .select-btn::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 30px;
+        background: white;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .item.active .select-btn{
+        outline: #fb2c36 solid 2px;
+    }
+    .item.active  .select-btn::before{
+        left: 30px;
+    }
+    /* add background color to the select-btn when clicked */
+    .item.active .select-btn{
+        background-color: hsl(3, 86%, 64%);
+    }
+    .item.white-background.active .select-btn{
+        background-color: hsl(3, 77%, 44%);
+    }
+
+
+    /* add background color to LINKS when clicked */
+    .link-btn.clicked{
+        background-color: hsl(3, 86%, 64%);
+        color: #000;
+    }
+    .link-btn.white-background.clicked{
+        background-color: hsl(3, 77%, 44%);
+        color: #000;
+    }
+    
+
+    .remove-btn:hover{
+        background-color: hsl(3, 86%, 64%);
+    }
+    .remove-btn.white-background:hover{
+        background-color: hsl(3, 77%, 44%);
+    }
+
+
+    /* Active and Inactive containers*/
+    .div-active-items,
+    .div-Inactive-items{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: repeat(12, minmax(0, 1fr));
+        align-items: stretch;
+        width: 100%;
+        gap: 0.75rem;
+        background-color: inherit;
+    }
+
+    @media (width >= 768px) {
+        .div-active-items,
+        .div-Inactive-items{
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-rows: repeat(4, minmax(0, 1fr));
+        }
+    }
+}

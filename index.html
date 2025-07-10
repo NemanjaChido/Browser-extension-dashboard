@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension list</title>
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body class="w-screen min-h-screen dark-background p-4 flex justify-center">
+<!-- wrapped content -->
+ <section class="w-full min-h-full flex flex-col">
+     <!-- logo/navigation bar container -->
+    <nav id="nav-container" class="grid grid-rows-1 grid-cols-[1fr_3rem] p-2 Neutral-800 rounded-2xl w-full">
+        <div class="flex items-center h-full"><img class="h-[90%]" src="/assets/images/logo.svg" alt="logo"></div>
+        <div class="h-full relative flex justify-center items-center">
+            <span id="sun-icon" class="z-100 absolute inset-0 h-full w-full rounded-xl flex justify-center items-center Neutral-700 ring ring-neutral-600 cursor-pointer"><img class="w-[50%] h-[50%]" src="assets/images/icon-sun.svg" alt="sun-icon"></span>
+            <span id="moon-icon" class="absolute inset-0 h-full w-full rounded-xl flex justify-center items-center bg-blue-100 shadow-lg cursor-pointer"><img class="w-[50%] h-[50%]" src="assets/images/icon-moon.svg" alt="moon-icon"></span>
+        </div>
+    </nav>
+     <!--link container -->
+    <div class="flex flex-col justify-between items-center md:flex-row gap-2 p-4 w-full">
+        <h2 class="text-size font-bold">Extension List</h2>
+        <ul class="list-none flex flex-row gap-4">
+            <li class="flex items-center justify-center">
+                <a class="link-btn all-btn Neutral-700 ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 medium-text hover:bg-gray-600 focus:ring-2 focus:ring-red-500 cursor-pointer" href="#">All</a>
+            </li>
+            <li class="flex items-center justify-center">
+                <a class="link-btn active-btn Neutral-700 ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 medium-text hover:bg-gray-600 focus:ring-2 focus:ring-red-500 cursor-pointer" href="#">Active</a>
+            </li>
+            <li class="flex items-center justify-center">
+                <a class="link-btn inactive-btn Neutral-700 ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 medium-text hover:bg-gray-600 focus:ring-2 focus:ring-red-500 cursor-pointer" href="#">Inactive</a>
+            </li>
+        </ul>
+    </div>
+    <section class="relative w-full flex flex-col min-h-full">
+            <!-- all-listed-items-container -->
+            <div class="all-item-container absolute inset-0 w-full h-full z-10">
+                <div class="grid grid-cols-1 grid-rows-12 md:grid-rows-4 md:grid-cols-3 gap-3 w-full items-stretch">
+
+                     <!-- item-->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                            <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-devlens.svg" alt="logo-devlens">
+                            </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">DevLens</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Quickly inspect page layouts and visualize element boundaries.</p>
+                            </div>
+                        </div>
+                        <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%] ">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer focus:ring-2 focus:ring-red-500">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                     <!-- item-->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                            <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-style-spy.svg" alt="logo-stylespy">
+                            </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">Stylespy</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Instantly analyze and copy CSS from any webpage element.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                     <!-- item-->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                            <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-speed-boost.svg" alt="SpeedBoost-icon">
+                            </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">SpeedBoost</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Optimizes browser resource usage to acclerate page loading.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-startr">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-json-wizard.svg" alt="JSONWizard-logo">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">JSONWizard</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Formatts, validates and prettifies JSON responses in-browser.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-tab-master-pro.svg" alt="tabmaster-logo">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">TabMaster Pro</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Organizes browser tab into groups and sessions.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-viewport-buddy.svg" alt="logo-viewportBuddy">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">ViewportBuddy</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Simulates various screen resolutions directly within the browser.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-markup-notes.svg" alt="logo-Markup Notes">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">Markup Notes</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+                            </div>
+                        </div>
+                        <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-grid-guides.svg" alt="logo-GridGuides">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">GridGuides</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Overlay customizable grids and alignments guides on any webpage.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-palette-picker.svg" alt="logo-Palette-Picker">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold ">Palette Picker</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Instantly extracts color palette from any webpage.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-link-checker.svg" alt="logo-LinkChecker">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold ">LinkChecker</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Scans and highlights broken links on any page.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                           <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-dom-snapshot.svg" alt="logo-Dom Snapshot">
+                           </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">Dom Snapshot</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Capture and exports DOM structures quickly.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="item rounded-2xl p-3 flex flex-col h-50 Neutral-800 ring ring-neutral-600 hover:scale-105 transition-all duration-300">
+                        <div class="flex flex-row w-full h-[60%]">
+                            <div class="w-[30%] h-full flex justify-start">
+                                <img class="w-[80%] h-[80%]" src="assets/images/logo-console-plus.svg" alt="logo-ConsolePlus">
+                            </div>
+                            <div class="w-[70%] h-full">
+                                <h2 class="text-size font-semibold">ConsolePlus</h2>
+                                <p class="paragrph-font-size neutral-600 mt-3">Enhanced developer console with advanced filtering and logging.</p>
+                            </div>
+                        </div>
+                         <!-- Remove and add buttons -->
+                        <div class="flex flex-row justify-between items-center w-full h-[40%]">
+                            <button class="remove-btn h-[60%] ring ring-neutral-600 rounded-3xl pr-4 pl-4 pt-2 pb-2 cursor-pointer">Remove</button>
+                            <span class="select-btn relative h-[40%] w-[60px] rounded-3xl bg-neutral-600 cursor-pointer"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- active-item container -->
+            <div class="active-item-container absolute inset-0 w-full h-full"></div>
+            <!-- Inactive-item container -->
+            <div class="inactive-item-container absolute inset-0 w-full h-full"></div>
+    </section>
+ </section>
+
+
+ <script src="src/app.js"></script>
+</body>
+</html>

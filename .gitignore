@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Tailwind CSS build output (optional, include if you commit dist/)
+# dist/output.css  # Uncomment if you regenerate output.css on deployment
+
+# Environment files
+.env
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
